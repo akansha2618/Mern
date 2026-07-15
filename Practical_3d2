@@ -1,0 +1,25 @@
+.container{
+  width:700px;
+  margin:50px auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color:whitesmoke;
+  text-align:center;
+}
+h1{
+  color:darkblue;
+}
+p{
+  font-size:18px;
+  color:black;
+}
+button{
+  background-color:green;
+  padding: 10px;
+  cursor:pointer;
+
+}
+button:hover{
+  background-color: darkgreen;
+}
