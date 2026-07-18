@@ -1,0 +1,11 @@
+//A
+function calculate(name,salary){
+    let bonus=3000;
+    console.log("Employee Name: "+name);
+    console.log("Salary: "+salary);
+    console.log("Bonus: "+bonus);
+    console.log("Total Salary: "+(salary+bonus));
+}
+calculate("Akansha",50000);
+
+//B
