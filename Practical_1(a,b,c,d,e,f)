@@ -1,0 +1,48 @@
+//A
+node -v
+npm -v
+
+//B
+console.log("AKANSHA..");
+
+//C
+let num = 10; 
+let num1 = 20; 
+console.log("Addition:" + (num + num1));
+console.log("Subtraction:" + (num - num1)); 
+console.log("Multiplication:" + (num * num1)); 
+console.log("Division:" + (num / num1));
+
+//D
+let name="Akansha";
+let age=18;
+function display(name,age){
+    console.log("Variables and Functions");
+    console.log("NAME: "+name);
+    console.log("AGE: "+age);
+}
+display(name,age);
+
+//E
+let name="Akansha";
+let age=18;
+function display(name,age){			
+    console.log("NAME: "+name);
+    console.log("AGE: "+age);
+}
+display(name,age);
+if (age>=18){
+    console.log("ADULT");
+}
+else{
+    console.log("MINOR");
+}
+
+//F
+const userRoles = ['Admin', 'Editor', 'Subscriber']; 
+let listItems = ''; 
+// The loop runs outside the template 
+for (const role of userRoles) { 
+    listItems += ` Role: ${role}`;  } 
+const finalMarkup = `${listItems}`; 
+console.log(finalMarkup);

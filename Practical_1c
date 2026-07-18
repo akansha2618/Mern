@@ -1,6 +1,0 @@
-let num = 10; 
-let num1 = 20; 
-console.log("Addition:" + (num + num1));
-console.log("Subtraction:" + (num - num1)); 
-console.log("Multiplication:" + (num * num1)); 
-console.log("Division:" + (num / num1));
