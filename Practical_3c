@@ -1,0 +1,19 @@
+function App(){
+const math= 99;
+const sci=80;
+const name="Akansha";
+function calculate(mark1,mark2){return mark1+mark2;}
+return(
+<div>
+<h1>STUDENT MARKS</h1>
+<hr/>
+<p>Student Name: {name}</p>
+<p>Mathematics Marks: {math}</p>
+<p>Science Marks: {sci}</p>
+<hr/>
+<h2>Total Marks: {calculate(math,sci)}</h2>
+<hr/>
+</div>
+);
+}
+export default App
