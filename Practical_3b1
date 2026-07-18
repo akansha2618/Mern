@@ -1,0 +1,15 @@
+function App()
+{
+const emp= "Akansha";
+const dept="IT";
+const sal= 90000;
+return (
+<div>
+<h1>Employee Details</h1>
+<p>Name: {emp}</p>
+<p>Department: {dept}</p>
+<p>Salary: ${sal}</p>
+</div>
+);
+}
+export default App
