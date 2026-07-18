@@ -1,0 +1,20 @@
+function App(){
+const studentName= "Akansha Ranade";
+const totalClasses= 60;
+const attendClasses= 59;
+const attendance = (attendClasses/ totalClasses)*100;
+return(
+<div>
+<h1>Attendance Dashboard</h1>
+<hr/>
+<p>Name: {studentName}</p>
+<p>Total Classes: {totalClasses}</p>
+<p>Classes Attended: {attendClasses}</p>
+<p>Atttendance: {attendance.toFixed(2)}%</p>
+<h3>
+Status:{attendance>=75? "Eligible for Exam": "Not Eligible"}
+</h3>
+</div>
+);
+}
+export default App
