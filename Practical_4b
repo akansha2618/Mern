@@ -1,0 +1,72 @@
+Header.jsx
+function Header(){
+    return(
+        <div >
+            <h1>Online Food Delivery Dashboard</h1>
+            <hr/>
+        </div>
+    );
+}
+export default Header;
+Footer.jsx
+function Footer(){
+    return(
+        <div > 
+            <h1>© 2026 Online Food Delivery</h1>
+        </div>
+    );
+}
+export default Footer;
+Hotel.jsx
+function Hotel(props){
+    const Discount = (props.price*props.discount)/100;
+    const finalPrice = props.price - Discount;
+    return(
+        <div>
+            <h2>{props.restaurant}</h2>
+            <p>Food Item: {props.food}</p>
+            <p>Original Price: ₹{props.price}</p>
+            <p>Discount: {props.discount}%</p>
+            <p>Discount Amount: ₹{Discount}</p>
+            <p>Final Price: ₹{finalPrice}</p>
+            <p>Rate: {props.rate}</p>
+            <hr/>
+        </div>
+    );
+}
+export default Hotel;
+App.jsx
+import Hotel from "./components/Hotel"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+function App(){
+    return(
+        <div>
+            <Header/>
+            <Hotel
+            restaurant="Momos Shop"
+            food="momos"
+            price={500}
+            discount={10}
+            rate={4.9}
+            />
+            <Hotel
+            restaurant="Pizza Shop"
+            food="cheese pizza"
+            price={700}
+            discount={15}
+            rate={4.2}
+            />
+            <Hotel
+            restaurant="Juice Shop"
+            food="Fanta"
+            price={100}
+            discount={9}
+            rate={3.5}
+            />
+            <Footer/>
+
+        </div>
+    );
+}
+export default App;
