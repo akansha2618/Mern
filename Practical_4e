@@ -1,0 +1,51 @@
+App.jsx
+import {useState} from "react";
+import TodoList from "./components/TodoList";
+function App() {
+  return (
+    <div>
+      <TodoList />
+    </div>
+  );
+}
+export default App;
+ToDoList.jsx:
+import React, { useState } from "react";
+function TodoList() {
+  const [tasks, setTasks] = useState(["Practical Submission"]);
+  const [inputTask, setInputTask] = useState("");
+
+  const handleAddTask = (e) => {
+    e.preventDefault();
+    if (inputTask.trim() === "") return;
+    setTasks([...tasks, inputTask]);
+    setInputTask("");
+  };
+  return (
+    <div className="todo-card">
+      <h1 className="todo-title">To-Do List</h1>
+      <form  onSubmit={handleAddTask}>
+        <input
+          type="text"
+          className="todo-input"
+          placeholder="Enter Task"
+          value={inputTask}
+          onChange={(e) => setInputTask(e.target.value)}
+        />
+        <br/>
+        <button type="submit" className="add-btn">
+          Add Task
+        </button>
+      </form>
+      <h2>My Tasks</h2>
+      <ul className="tasks-list">
+        {tasks.map((task, index) => (
+          <li key={index} className="task-item">
+            {task}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+export default TodoList;
