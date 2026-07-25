@@ -1,0 +1,14 @@
+App.jsx
+import {useState} from "react";
+function App(){
+  const [count,setCount]=useState(0)
+  return(
+    <div>
+      <h1>BUTTON CLICK COUNTER</h1>
+      <hr/>
+      <p>User Click: {count} Times</p>
+      <button onClick={()=>setCount(count+1)}>Click ME</button>
+    </div>
+  );
+}
+export default App;
